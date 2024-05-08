@@ -1,10 +1,11 @@
+/* eslint-disable no-console */
 import http from 'http';
 import reload from 'reload';
 import chalk from 'chalk';
 import terminalLink from 'terminal-link';
 
 import app from './config/server.js';
-import { figures } from './constants/index.js';
+import figures from './constants/index.js';
 
 const server = http.createServer(app);
 server.listen(app.get('port'), () => {

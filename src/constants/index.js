@@ -1,3 +1,6 @@
+/* eslint-disable operator-linebreak */
+/* eslint-disable no-useless-escape */
+/* eslint-disable no-tabs */
 const rabbit = `          ,
             /|      __
            / |   ,-~ /
@@ -217,8 +220,7 @@ const cown = `        \\   ^__^
        ||----w |
        ||     ||  Moo!`;
 
-
-export const figures = [
+const figures = [
   rabbit,
   note,
   flower,
@@ -227,5 +229,7 @@ export const figures = [
   dragon,
   skeleton,
   unicorn,
-  cown
+  cown,
 ];
+
+export default figures;

@@ -6,13 +6,16 @@
   "scripts": {
     "test": "npm jest",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js -e handlebars,hbs,css,html,js"
+    "dev": "nodemon src/index.js -e handlebars,hbs,css,html,js",
+    "prettier": "npx prettier . --write",
+    "lint" : "eslint ."
   },
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "chalk": "^5.3.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
@@ -24,11 +27,17 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0",
     "passport": "^0.7.0",
-    "passport-local": "^1.0.0"
-  },
-  "devDependencies": {
-    "chalk": "^5.3.0",
+    "passport-local": "^1.0.0",
     "reload": "^3.2.1",
     "terminal-link": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "3.2.5"
   }
 }

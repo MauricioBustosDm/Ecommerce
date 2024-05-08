@@ -5,7 +5,9 @@ import {
   signUpController,
 } from '../controllers/auth.controller.js';
 
-export const authRouter = Router();
+const authRouter = Router();
 
 authRouter.get('/sign-in', signInController);
 authRouter.get('/sign-up', signUpController);
+
+export default authRouter;

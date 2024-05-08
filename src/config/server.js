@@ -1,6 +1,7 @@
+/* eslint-disable no-underscore-dangle */
 import express from 'express';
 import path from 'path';
-import morgan from 'morgan'
+import morgan from 'morgan';
 import { fileURLToPath } from 'url';
 import { engine } from 'express-handlebars';
 
@@ -18,9 +19,9 @@ app.set('views', path.join(__dirname, '../views'));
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false }));
-app.use(morgan('dev'))
+app.use(morgan('dev'));
 
-app.use(authRouter)
-app.use(commonRoutes)
+app.use(authRouter);
+app.use(commonRoutes);
 
 export default app;

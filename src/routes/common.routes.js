@@ -5,7 +5,9 @@ import {
   aboutController,
 } from '../controllers/common.controller.js';
 
-export const commonRoutes = Router();
+const commonRoutes = Router();
 
 commonRoutes.get('/', homeController);
 commonRoutes.get('/about', aboutController);
+
+export default commonRoutes;
