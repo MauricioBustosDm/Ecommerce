@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm jest",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js -e handlebars,hbs,css,html,js"
   },
   "type": "module",
   "author": "",
@@ -25,5 +25,8 @@
     "nodemon": "^3.1.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "reload": "^3.2.1"
   }
 }

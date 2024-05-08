@@ -1,5 +1,11 @@
-import app from'./config/server.js';
+import http from 'http';
+import reload from 'reload';
 
-app.listen(app.get('port'), () => {
+import app from './config/server.js';
+
+const server = http.createServer(app);
+server.listen(app.get('port'), () => {
   console.log('Is up');
 });
+
+reload(app);
