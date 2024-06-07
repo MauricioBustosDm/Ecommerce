@@ -1,0 +1,111 @@
+footer {
+    background-color: #141718;
+    color: #fff;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+a{
+    color: #fff;
+    text-decoration: none; 
+}
+.div-footer-1{
+    display: grid;
+    grid-template-columns: 200px 250px 80px 80px 80px 80px;
+    grid-template-rows: 150px;
+    align-items: center;
+
+}
+.div-footer-2{
+    display: grid;
+    grid-template-columns: 270px 400px 70px;
+    grid-template-rows: 100px;
+    align-items: center;
+    border-top:1px solid #444;
+
+}
+h1{
+    border-right: 1px solid #444;
+}
+p{
+    padding-left: 20px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+@media (max-width:768px){
+    footer{
+        padding: 10px;
+
+    }
+    .div-footer-1{
+        grid-template-columns: 100px 140px 35px 50px 35px 70px;
+    }
+    .div-footer-2{
+        grid-template-columns: 180px 165px 70px;
+    }
+    .footer-links-2{
+        display: flex;
+        
+        flex-direction: column;    
+    }
+
+}
+@media (max-width:425px) {
+    footer{
+        padding: 0;
+    }
+    .div-footer-1{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(6, 50px);
+        justify-self: center;
+    
+    }
+    .div-footer-2{
+        display: grid;
+        grid-template-columns: 270px;
+        grid-template-rows: repeat(3, 50px);
+        align-items: center;
+        border-top:1px solid #444;
+    
+    }
+    .footer-links-1{
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer-links-2{
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer-icons{
+        display: flex;
+        justify-content: center;
+
+    }
+    a{
+       justify-self: center;
+       
+    }
+    p{
+        justify-self: center;
+        padding-left: 0;
+    }
+    h1{
+        justify-self: center;
+        border: 0;
+    } 
+    img{
+        width: 60px;
+    }
+    .links-2{
+        width: 120px;
+    }
+}
